@@ -4,12 +4,13 @@
 
 using namespace std;
 
-
+/*
 ostream& operator<<(ostream& os, const MyInfo* info){
   return os << "Symbol: " << info->symbol << endl
               << "Number: " << info->number << endl
               << "Result: " << info->result << endl;
 }
+/**/
 
 // Initializes the Stack
 void Stack::init(){
@@ -95,7 +96,7 @@ Stack& Stack::operator= (const Stack & rhs){
 
 // Checks to see if the Stack is empty
 
-
+/*
 int main(int argc, char const *argv[]) {
   //NOTE: head starts initialized as null, but as soon as it leaves the scope of that function, it gets initialized to garbage. Doesn't matter what I set it too
 
@@ -132,3 +133,4 @@ int main(int argc, char const *argv[]) {
 
   return 0;
 }
+/**/

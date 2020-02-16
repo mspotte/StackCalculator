@@ -1,6 +1,7 @@
 #ifndef Stack_H
 #define Stack_H
 
+
 struct MyInfo{
   char symbol;
   int number;
@@ -21,6 +22,7 @@ struct MyInfo{
   }
 };
 
+
 class Stack{
 
   struct Node { 
@@ -33,6 +35,7 @@ class Stack{
       info = new MyInfo(s,n,r);
     }
   }; 
+
 
   public:
     Stack ();
