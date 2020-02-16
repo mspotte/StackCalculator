@@ -34,6 +34,9 @@ class Stack{
     Node(char s, int n, int r){
       info = new MyInfo(s,n,r);
     }
+    Node(MyInfo* i){
+      info = i;
+    }
   }; 
 
 
@@ -42,6 +45,7 @@ class Stack{
     void init();
     void push(int x);
     void push(char s, int n, int r);
+    void push(MyInfo* info);
     MyInfo* pop();
     MyInfo* top();
     bool isEmpty();

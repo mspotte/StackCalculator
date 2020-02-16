@@ -36,6 +36,13 @@ void Stack::push(char s, int n, int r){
   nodecount += 1;
 }
 
+void Stack::push(MyInfo* info){
+  Node* newnode = new Node{info}; 
+  newnode->next = head; 
+  head = newnode;
+  nodecount += 1;
+} 
+
 MyInfo* Stack::pop(){
   Node *temp = head;
   MyInfo* value = temp->info;

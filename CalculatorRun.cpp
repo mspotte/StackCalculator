@@ -90,18 +90,18 @@ int currentValue;
 
 int main(int argc, char const *argv[]) {
 
-  Stack x;
+  Stack undo;
+  Stack redo;
+  MyInfo* info_test = new MyInfo{7};
+  MyInfo* info_hold;
 
-  cout << x.isEmpty();
+  redo.push('+',200,0);
 
-  
-  x.push(4);
-  x.push(5);
-  x.push('s',6,6);
-  cout << x.pop();
-  cout << x.pop();
-  x.clear();
-  cout << x.isEmpty();
+  info_test->symbol = 'b';
+  redo.push(info_test);
+  undo.push(redo.pop());
+  cout << undo.pop();
+  cout << redo.pop();
 
   return 0;
 }
